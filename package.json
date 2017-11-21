@@ -1,11 +1,17 @@
 {
-  "name": "draw-centered",
-  "main": "./lib/draw-centered",
+  "name": "center-editor",
+  "main": "./lib/center-editor",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "keywords": [],
-  "repository": "https://github.com/atom/draw-centered",
-  "license": "MIT",
+  "keywords": [
+    "atom",
+    "centering",
+    "centered",
+    "sublime"
+  ],
+  "repository": "https://github.com/phyllisstein/atom-center-editor",
+  "license": "GPL-3.0",
+  "author": "Daniel P. Shannon <daniel@daniel.sh>",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
