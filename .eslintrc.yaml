@@ -1,0 +1,329 @@
+env:
+  browser: true
+  es6: true
+  node: true
+extends:
+  - eslint:recommended
+parser: babel-eslint
+parserOptions:
+  ecmaFeatures:
+    experimentalObjectRestSpread: true
+    impliedStrict: true
+    jsx: true
+  ecmaVersion: 8
+  sourceType: module
+plugins:
+  - babel
+rules:
+  babel/new-cap:
+    - warn
+    - capIsNew: false
+      newIsCap: true
+  babel/no-invalid-this: warn
+  babel/object-curly-spacing:
+    - warn
+    - always
+  babel/semi:
+    - warn
+    - never
+
+  accessor-pairs: off
+  arrow-parens:
+    - warn
+    - as-needed
+  arrow-spacing:
+    - warn
+    - after: true
+      before: true
+  block-spacing:
+    - warn
+    - always
+  brace-style:
+    - warn
+    - 1tbs
+    - allowSingleLine: true
+  camelcase: warn
+  comma-dangle:
+    - warn
+    - arrays: always-multiline
+      exports: always-multiline
+      functions: always-multiline
+      imports: always-multiline
+      objects: always-multiline
+  comma-spacing:
+    - warn
+    - after: true
+      before: false
+  comma-style:
+    - warn
+    - last
+  constructor-super: warn
+  curly:
+    - warn
+    - multi-line
+    - consistent
+  dot-location:
+    - warn
+    - property
+  eol-last: off
+  eqeqeq:
+    - error
+    - always
+    - null: ignore
+  func-call-spacing:
+    - warn
+    - never
+  generator-star-spacing:
+    - warn
+    - after: false
+      before: true
+  handle-callback-err:
+    - warn
+    - '^(err|error)$'
+  indent:
+    - error
+    - 2
+    - ArrayExpression: first
+      CallExpression:
+        arguments: first
+      FunctionDeclaration:
+        body: 1
+        parameters: first
+      FunctionExpression:
+        parameters: first
+        body: 1
+      MemberExpression: off
+      ObjectExpression: first
+      outerIIFEBody: 1
+      SwitchCase: 1
+      VariableDeclarator:
+        const: 3
+        let: 2
+        var: 2
+  jsx-quotes:
+    - warn
+    - prefer-single
+  key-spacing:
+    - warn
+    - afterColon: true
+      beforeColon: false
+  keyword-spacing:
+    - warn
+    - after: true
+      before: true
+  new-cap: off
+  new-parens: warn
+  no-array-constructor: error
+  no-caller: error
+  no-class-assign: error
+  no-compare-neg-zero: error
+  no-cond-assign: off
+  no-console: off
+  no-const-assign: error
+  no-constant-condition:
+    - error
+    - checkLoops: false
+  no-control-regex: error
+  no-debugger: off
+  no-delete-var: error
+  no-dupe-args: error
+  no-dupe-class-members: error
+  no-dupe-keys: error
+  no-duplicate-case: error
+  no-empty: off
+  no-empty-character-class: error
+  no-empty-pattern: error
+  no-eval: error
+  no-ex-assign: error
+  no-extend-native: off
+  no-extra-bind: warn
+  no-extra-boolean-cast: warn
+  no-extra-parens: off
+  no-fallthrough: off
+  no-floating-decimal: error
+  no-func-assign: error
+  no-global-assign: error
+  no-implied-eval: error
+  no-inner-declarations:
+    - error
+    - functions
+  no-invalid-regexp: error
+  no-invalid-this: off
+  no-irregular-whitespace: error
+  no-iterator: error
+  no-label-var: error
+  no-labels:
+    - error
+    - allowLoop: false
+      allowSwitch: false
+  no-lone-blocks: error
+  no-mixed-operators:
+    - error
+    - allowSamePrecedence: true
+      groups:
+        - ['==', '!=', '===', '!==', '>', '>=', '<', '<=']
+        - ['&&', '||']
+        - ['in', 'instanceof']
+  no-mixed-spaces-and-tabs: error
+  no-multi-spaces: warn
+  no-multi-str: warn
+  no-multiple-empty-lines:
+    - warn
+    - max: 2
+  no-negated-in-lhs: warn
+  no-new: off
+  no-new-func: error
+  no-new-object: error
+  no-new-require: error
+  no-new-symbol: error
+  no-new-wrappers: error
+  no-obj-calls: error
+  no-octal: error
+  no-octal-escape: error
+  no-path-concat: warn
+  no-proto: error
+  no-redeclare: error
+  no-regex-spaces: error
+  no-return-assign: off
+  no-return-await: error
+  no-self-assign: error
+  no-self-compare: error
+  no-sequences: error
+  no-shadow:
+    - warn
+    - builtinGlobals: false
+      hoist: all
+  no-shadow-restricted-names: warn
+  no-sparse-arrays: error
+  no-tabs: error
+  no-template-curly-in-string: error
+  no-this-before-super: error
+  no-throw-literal: error
+  no-trailing-spaces: off
+  no-undef: off
+  no-undef-init: error
+  no-unexpected-multiline: error
+  no-unmodified-loop-condition: error
+  no-unneeded-ternary:
+    - warn
+    - defaultAssignment: false
+  no-unreachable: error
+  no-unsafe-finally: error
+  no-unsafe-negation: error
+  no-unused-expressions:
+    - error
+    - allowShortCircuit: true
+      allowTernary: true
+  no-unused-vars:
+    - error
+    - args: after-used
+      ignoreRestSiblings: false
+      vars: all
+      argsIgnorePattern: '^_.+'
+      varsIgnorePattern: '^_.+'
+  no-use-before-define:
+    - error
+    - functions: false
+  no-useless-call: warn
+  no-useless-computed-key: warn
+  no-useless-constructor: warn
+  no-useless-escape: warn
+  no-useless-rename: warn
+  no-useless-return: warn
+  no-whitespace-before-property: error
+  no-with: error
+  object-curly-spacing: off
+  object-curly-newline:
+    - warn
+    - consistent: true
+      multiline: true
+  object-property-newline:
+    - error
+    - allowMultiplePropertiesPerLine: true
+  one-var: off
+  operator-linebreak:
+    - warn
+    - after
+    - overrides:
+        '?': before
+        ':': before
+  padded-blocks:
+    - warn
+    - blocks: never
+      classes: never
+      switches: never
+  prefer-const: warn
+  prefer-promise-reject-errors: error
+  quote-props:
+    - warn
+    - as-needed
+  quotes:
+    - error
+    - single
+    - avoidEscape: true
+  rest-spread-spacing:
+    - error
+    - never
+  semi: off
+  semi-spacing:
+    - error
+    - after: true
+      before: false
+  sort-imports:
+    - warn
+    - ignoreCase: true
+  sort-keys:
+    - warn
+    - asc
+    - caseSensitive: false
+      natural: true
+  space-before-blocks:
+    - error
+    - always
+  space-before-function-paren:
+    - error
+    - anonymous: never
+      asyncArrow: always
+      named: never
+  space-in-parens:
+    - error
+    - never
+  space-infix-ops: off
+  space-unary-ops:
+    - error
+    - nonwords: false
+      words: true
+  spaced-comment:
+    - warn
+    - always
+    - block:
+        balanced: true
+        exceptions:
+          - '*'
+          - '-'
+          - '='
+          - '~'
+  symbol-description: error
+  template-curly-spacing:
+    - error
+    - always
+  template-tag-spacing:
+    - error
+    - never
+  unicode-bom:
+    - error
+    - never
+  use-isnan: error
+  valid-typeof:
+    - error
+    - requireStringLiterals: true
+  wrap-iife:
+    - error
+    - any
+    - functionPrototypeMethods: true
+  yield-star-spacing:
+    - warn
+    - both
+  yoda:
+    - error
+    - never
