@@ -1,4 +1,7 @@
 # Changelog
+## v0.4.0---9 December 2017
+* Use `MutationObserver` API to catch and fix all changes to the editor's width.
+
 ## v0.3.0---9 December 2017
 * Recenter on changes to the current grammar or the `editor.softWrap` setting.
 
