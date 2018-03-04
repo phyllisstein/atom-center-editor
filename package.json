@@ -2,7 +2,7 @@
   "name": "center-editor",
   "main": "./lib/center-editor",
   "version": "0.4.1",
-  "description": "A short description of your package",
+  "description": "Better, faster, stronger editor centering.",
   "keywords": [
     "atom",
     "centering",
