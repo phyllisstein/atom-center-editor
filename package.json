@@ -1,7 +1,7 @@
 {
   "name": "center-editor",
   "main": "./lib/center-editor",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Better, faster, stronger editor centering.",
   "keywords": [
     "atom",
