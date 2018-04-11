@@ -1,12 +1,18 @@
 # Changelog
-## v0.4.1---8 January 2018
+## v0.6.0
+* Remove redundant requestAnimationFrame call, _slightly_ improving editor performance.
+
+## v0.5.0
+* Fix package description.
+
+## v0.4.1
 * Correctly measure hard tabs.
 
-## v0.4.0---9 December 2017
+## v0.4.0
 * Use `MutationObserver` API to catch and fix all changes to the editor's width.
 
-## v0.3.0---9 December 2017
+## v0.3.0
 * Recenter on changes to the current grammar or the `editor.softWrap` setting.
 
-## v0.1.0---20 November 2017
+## v0.1.0
 * Initial implementation and release.
