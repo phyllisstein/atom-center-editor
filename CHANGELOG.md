@@ -1,4 +1,9 @@
 # Changelog
+## v1.0.0
+* **New Feature:** Center lines independently of one another, producing a highly poetic effect.
+* Rely exclusively on `MutationObserver`s to catch and respond to editor changes.
+* Keep observers and subscriptions in memory only for the active editor.
+
 ## v0.6.0
 * Remove redundant requestAnimationFrame call, _slightly_ improving editor performance.
 
