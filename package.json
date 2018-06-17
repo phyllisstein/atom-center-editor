@@ -9,7 +9,7 @@
     "centered",
     "sublime"
   ],
-  "repository": "https://github.com/phyllisstein/atom-center-editor",
+  "repository": "git@github.com:phyllisstein/atom-center-editor",
   "license": "GPL-3.0",
   "author": "Daniel P. Shannon <daniel@daniel.sh>",
   "engines": {
@@ -19,7 +19,7 @@
   "devDependencies": {
     "babel-eslint": "^8.2.3",
     "eslint": "^5.0.0-rc.0",
-    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard": "^12.0.0-alpha.0",
     "eslint-plugin-babel": "^5.1.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0.1",
